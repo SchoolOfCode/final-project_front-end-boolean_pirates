@@ -1,9 +1,11 @@
-import React from 'react'
 
-const CreateTutorial = () => {
+import Form from '../components/form'
+const createtutorial = () => {
   return (
-    <div>CreateTutorial</div>
+    <div>
+    <Form/>
+    </div>
   )
 }
 
-export default CreateTutorial
+export default createtutorial
