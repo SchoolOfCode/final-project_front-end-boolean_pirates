@@ -1,8 +1,9 @@
-import Layout from '../components/layout'
-import { useFetchUser } from '../lib/user'
+import Layout from "../components/layout";
+import { useFetchUser } from "../lib/user";
+import Card from "../components/card.jsx";
 
 const Home = () => {
-  const { user, loading } = useFetchUser()
+  const { user, loading } = useFetchUser();
 
   return (
     <Layout user={user} loading={loading}>
@@ -16,7 +17,7 @@ const Home = () => {
             To test the login click in <i>Login</i>
           </p>
           <p>
-            Once you have logged in you should be able to click in{' '}
+            Once you have logged in you should be able to click in{" "}
             <i>Profile</i> and <i>Logout</i>
           </p>
         </>
@@ -30,8 +31,16 @@ const Home = () => {
           <p>name: {user.name}</p>
         </>
       )}
+      <Card
+        imageURL="/img/card-top.jpg"
+        title="Frozen Lake"
+        description=" Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        hashtag1="cheese"
+        hashtag2="bread"
+        hashtag3="cake"
+      />
     </Layout>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
