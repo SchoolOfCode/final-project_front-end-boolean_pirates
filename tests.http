@@ -1,9 +1,9 @@
-GET https://backend-soc.herokuapp.com/tutorials
+GET http://localhost:3000/api/tutorials/tutorials
 
 
 ###
 
-GET https://backend-soc.herokuapp.com/tutorials
+GET http://localhost:3000/api/tutorials/62f29f178da7b5756859e957
 
 
 ###
@@ -11,7 +11,6 @@ DELETE https://backend-soc.herokuapp.com/tutorials/630923dfa70e7a6f8256f6fa
 
 
 ###
-
 POST http://localhost:3000/api/tutorials/tutorials
 content-type: application/json
 
@@ -29,7 +28,7 @@ content-type: application/json
     }
 
 ###
-PATCH http://localhost:5000/tutorials/62ecd87c4e7aa5b700a05013/likeTutorial
+PATCH http://localhost:3000/api/tutorials/like/62f29f178da7b5756859e957
 content-type: application/json
 
 {
@@ -38,7 +37,7 @@ content-type: application/json
 
 
 ###
-PATCH http://localhost:5000/tutorials/62f10496c07fed5ddc8b481a/commentPost
+PATCH  http://localhost:3000/api/tutorials/comments/62f29f178da7b5756859e957
 content-type: application/json
 
 {
